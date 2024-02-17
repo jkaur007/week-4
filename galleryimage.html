@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture This!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+ 
+    .header {
+      text-align: center;
+      background-color: #a3e1c9;
+      padding: 20px;
+      
+    }
+    .header{ border: 3px solid rgb(246, 244, 244);
+
+    }
+    .header2 {
+      text-align: center;
+      background-color: #ad8cc4;
+      padding: 20px;
+      border: 3px solid rgb(255, 248, 248);
+      width: 40%;
+
+    }
+    .title h1 {
+      margin: 0;
+      font-size: 36px;
+    background-color: beige;
+    }
+ 
+    .title h4 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+   .title1{
+    text-align: left;
+      background-color: #c4d8d1;
+      width: 40%;
+   }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+ 
+    @media (max-width: 959px) {
+      img {
+        width: 100%;
+      }
+    }
+ 
+    @media (min-width: 960px) {
+      img {
+        max-width: 50%;
+        height: auto;
+      }
+    }
+  
+      @media (max-width: 720px) {
+      img {
+        width: 100%;
+      }
+    }
+ 
+    @media (min-width: 360px) {
+      img {
+        max-width: 50%;
+        height: auto;
+      }
+    }
+    
+  </style>
+</head>
+ 
+<body>
+  <header class="header">
+    <div class="title">
+      <h1>Picture This!</h1>
+      <h4>My Really Cool Blog Post</h4>
+    </div>
+    <picture>
+      <source media="(max-width: 959px)" srcset="./images/museum.jpg">
+      <source media="(min-width: 960px)" srcset="./images/museum.jpg">
+      <img src="images/museum.jpg" alt="Museum Image">
+    </picture>
+  </header>
+<header class="header2">
+  <div class="title1">
+     <h1>Picture This!</h1>
+    <h4>My Really Cool Blog Post</h4>
+    </div>
+  <picture>
+    <source media="(max-width: 720px)" srcset="./images/img1.jpeg">
+    <source media="(min-width: 360px)" srcset="./images/img1.jpeg">
+    <img src="images/img1.jpeg" alt="Museum Image">
+  </picture>
+  
+</header>
+  
+</body>
+ 
+</html>
